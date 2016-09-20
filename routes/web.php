@@ -14,12 +14,11 @@
 /**
  * Public views
  */
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'DestinationsController@index');
+Route::resource('destination', 'DestinationsController');
 
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+//Route::get('/home', 'HomeController@index');
 
