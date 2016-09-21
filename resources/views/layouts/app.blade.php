@@ -19,6 +19,12 @@
             'csrfToken' => csrf_token(),
         ]); ?>
     </script>
+    <style>
+      #map {
+        width: 100%;
+        height: 400px;
+      }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-default navbar-static-top">
